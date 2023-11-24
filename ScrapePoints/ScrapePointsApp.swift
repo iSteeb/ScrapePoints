@@ -11,7 +11,7 @@ import SwiftUI
 struct ScrapePointsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WaypointExtractor()
         }
     }
 }

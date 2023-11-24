@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46B272B72B0788F3001CA3C8 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B272B62B0788F3001CA3C8 /* ShareViewController.swift */; };
+		46B272BA2B0788F3001CA3C8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B272B82B0788F3001CA3C8 /* MainInterface.storyboard */; };
+		46B272BE2B0788F3001CA3C8 /* ShareFromGoogleMaps.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 46B272B42B0788F3001CA3C8 /* ShareFromGoogleMaps.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46FD7EAE2B07804F00DAD345 /* ScrapePointsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD7EAD2B07804F00DAD345 /* ScrapePointsApp.swift */; };
-		46FD7EB02B07804F00DAD345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD7EAF2B07804F00DAD345 /* ContentView.swift */; };
+		46FD7EB02B07804F00DAD345 /* WaypointExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD7EAF2B07804F00DAD345 /* WaypointExtractor.swift */; };
 		46FD7EB22B07805000DAD345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FD7EB12B07805000DAD345 /* Assets.xcassets */; };
 		46FD7EB52B07805000DAD345 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FD7EB42B07805000DAD345 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		46B272BC2B0788F3001CA3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FD7EA22B07804F00DAD345 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46B272B32B0788F3001CA3C8;
+			remoteInfo = ShareFromGoogleMaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46B272BF2B0788F3001CA3C8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46B272BE2B0788F3001CA3C8 /* ShareFromGoogleMaps.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		462A6E122B0AC00800D2C858 /* ROADMAP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ROADMAP.md; sourceTree = "<group>"; };
+		46B272B42B0788F3001CA3C8 /* ShareFromGoogleMaps.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareFromGoogleMaps.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B272B62B0788F3001CA3C8 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		46B272B92B0788F3001CA3C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		46B272BB2B0788F3001CA3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46FD7EAA2B07804F00DAD345 /* ScrapePoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrapePoints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FD7EAD2B07804F00DAD345 /* ScrapePointsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapePointsApp.swift; sourceTree = "<group>"; };
-		46FD7EAF2B07804F00DAD345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46FD7EAF2B07804F00DAD345 /* WaypointExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointExtractor.swift; sourceTree = "<group>"; };
 		46FD7EB12B07805000DAD345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46FD7EB42B07805000DAD345 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46FD7EBB2B0780B400DAD345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		46B272B12B0788F3001CA3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FD7EA72B07804F00DAD345 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46B272B52B0788F3001CA3C8 /* ShareFromGoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				46B272B62B0788F3001CA3C8 /* ShareViewController.swift */,
+				46B272B82B0788F3001CA3C8 /* MainInterface.storyboard */,
+				46B272BB2B0788F3001CA3C8 /* Info.plist */,
+			);
+			path = ShareFromGoogleMaps;
+			sourceTree = "<group>";
+		};
 		46FD7EA12B07804F00DAD345 = {
 			isa = PBXGroup;
 			children = (
+				462A6E122B0AC00800D2C858 /* ROADMAP.md */,
 				46FD7EAC2B07804F00DAD345 /* ScrapePoints */,
+				46B272B52B0788F3001CA3C8 /* ShareFromGoogleMaps */,
 				46FD7EAB2B07804F00DAD345 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				46FD7EAA2B07804F00DAD345 /* ScrapePoints.app */,
+				46B272B42B0788F3001CA3C8 /* ShareFromGoogleMaps.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +104,9 @@
 		46FD7EAC2B07804F00DAD345 /* ScrapePoints */ = {
 			isa = PBXGroup;
 			children = (
+				46FD7EBB2B0780B400DAD345 /* Info.plist */,
 				46FD7EAD2B07804F00DAD345 /* ScrapePointsApp.swift */,
-				46FD7EAF2B07804F00DAD345 /* ContentView.swift */,
+				46FD7EAF2B07804F00DAD345 /* WaypointExtractor.swift */,
 				46FD7EB12B07805000DAD345 /* Assets.xcassets */,
 				46FD7EB32B07805000DAD345 /* Preview Content */,
 			);
@@ -70,6 +124,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		46B272B32B0788F3001CA3C8 /* ShareFromGoogleMaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B272C22B0788F3001CA3C8 /* Build configuration list for PBXNativeTarget "ShareFromGoogleMaps" */;
+			buildPhases = (
+				46B272B02B0788F3001CA3C8 /* Sources */,
+				46B272B12B0788F3001CA3C8 /* Frameworks */,
+				46B272B22B0788F3001CA3C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareFromGoogleMaps;
+			productName = ShareFromGoogleMaps;
+			productReference = 46B272B42B0788F3001CA3C8 /* ShareFromGoogleMaps.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		46FD7EA92B07804F00DAD345 /* ScrapePoints */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46FD7EB82B07805000DAD345 /* Build configuration list for PBXNativeTarget "ScrapePoints" */;
@@ -77,10 +148,12 @@
 				46FD7EA62B07804F00DAD345 /* Sources */,
 				46FD7EA72B07804F00DAD345 /* Frameworks */,
 				46FD7EA82B07804F00DAD345 /* Resources */,
+				46B272BF2B0788F3001CA3C8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46B272BD2B0788F3001CA3C8 /* PBXTargetDependency */,
 			);
 			name = ScrapePoints;
 			productName = ScrapePoints;
@@ -97,6 +170,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					46B272B32B0788F3001CA3C8 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					46FD7EA92B07804F00DAD345 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -116,11 +192,20 @@
 			projectRoot = "";
 			targets = (
 				46FD7EA92B07804F00DAD345 /* ScrapePoints */,
+				46B272B32B0788F3001CA3C8 /* ShareFromGoogleMaps */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		46B272B22B0788F3001CA3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B272BA2B0788F3001CA3C8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FD7EA82B07804F00DAD345 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +218,95 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		46B272B02B0788F3001CA3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B272B72B0788F3001CA3C8 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FD7EA62B07804F00DAD345 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46FD7EB02B07804F00DAD345 /* ContentView.swift in Sources */,
+				46FD7EB02B07804F00DAD345 /* WaypointExtractor.swift in Sources */,
 				46FD7EAE2B07804F00DAD345 /* ScrapePointsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		46B272BD2B0788F3001CA3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46B272B32B0788F3001CA3C8 /* ShareFromGoogleMaps */;
+			targetProxy = 46B272BC2B0788F3001CA3C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46B272B82B0788F3001CA3C8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B272B92B0788F3001CA3C8 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		46B272C02B0788F3001CA3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7997G399U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareFromGoogleMaps/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareFromGoogleMaps;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duz.ie.ScrapePoints.ShareFromGoogleMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46B272C12B0788F3001CA3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7997G399U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareFromGoogleMaps/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareFromGoogleMaps;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duz.ie.ScrapePoints.ShareFromGoogleMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		46FD7EB62B07805000DAD345 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -267,6 +429,7 @@
 		46FD7EB92B07805000DAD345 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,27 +438,36 @@
 				DEVELOPMENT_TEAM = 7997G399U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrapePoints/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrapePoints;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = duz.ie.ScrapePoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		46FD7EBA2B07805000DAD345 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,27 +476,44 @@
 				DEVELOPMENT_TEAM = 7997G399U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrapePoints/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrapePoints;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = duz.ie.ScrapePoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		46B272C22B0788F3001CA3C8 /* Build configuration list for PBXNativeTarget "ShareFromGoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B272C02B0788F3001CA3C8 /* Debug */,
+				46B272C12B0788F3001CA3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46FD7EA52B07804F00DAD345 /* Build configuration list for PBXProject "ScrapePoints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
